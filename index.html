@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Гайд клуба «Вайбкодим портфолио»</title>
+  <meta name="description" content="Выжимка стримов и коворкинга клуба: что делать, как и где это посмотреть в записи.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="topbar" id="topbar">
+    <div class="topbar__row">
+      <a class="brand" href="#top">Гайд клуба</a>
+      <nav class="chips" id="chips" aria-label="Разделы гайда"></nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="hero__kicker" id="kicker"></p>
+      <h1 id="title"></h1>
+      <p class="hero__lead" id="lead"></p>
+      <ul class="hero__recs" id="recs"></ul>
+    </section>
+
+    <section class="toc" aria-labelledby="toc-title">
+      <h2 id="toc-title">Что здесь есть</h2>
+      <div class="toc__grid" id="toc"></div>
+    </section>
+
+    <div id="sections"></div>
+
+    <section class="section" id="glossary" data-section>
+      <header class="section__head">
+        <h2>Словарик вайбкодера</h2>
+        <p>Термины, которые надо знать, чтобы разговаривать с машиной на одном языке.</p>
+      </header>
+      <div id="glossary-body"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Собрано по записям клуба «Вайбкодим портфолио». Ссылки с таймкодом открывают запись на нужном месте.</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="content/guide.js"></script>
+  <script src="content/sections/01-approach.js"></script>
+  <script src="content/sections/02-docs.js"></script>
+  <script src="content/sections/03-prompts.js"></script>
+  <script src="content/sections/04-start.js"></script>
+  <script src="content/sections/05-cases.js"></script>
+  <script src="content/sections/06-design.js"></script>
+  <script src="content/sections/07-publish.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
